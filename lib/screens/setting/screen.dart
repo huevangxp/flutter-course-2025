@@ -39,7 +39,8 @@ class SettingScreen extends StatelessWidget {
                     elevation: 0,
                     child: ListTile(
                     leading: const Icon(Icons.person, color: Colors.teal),
-                    title: const Text('ຕັ້ງຄ່າ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),),
+                    title: const Text('ຕັ້ງຄ່າ', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700 ,fontFamily: 'NotoSansLao'),),
+                    
                   ),
                 )
             ],
