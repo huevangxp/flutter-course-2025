@@ -104,6 +104,7 @@ class Introduc extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.info, size: textFontSize * 2, color: Colors.red,),
+          SizedBox(height: 12),
           Text(
             'ສະບາຍດີ',
             style: TextStyle(
