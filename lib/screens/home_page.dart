@@ -77,7 +77,9 @@ class _HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
-                    children: [Introduc(textFontSize: textFontSize)],
+                    children: [
+                      
+                    ],
                   ),
                 ),
               ),
