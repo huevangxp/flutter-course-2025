@@ -31,7 +31,7 @@ class SettingScreen extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+       
           children: [const Text('ຕັ້ງຄ່າ')],
         ),
       ),
