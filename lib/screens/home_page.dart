@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -77,25 +77,20 @@ class _HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
-                    children: [
-                      Introduc(textFontSize: textFontSize),
-                    ],
+                    children: [Introduc(textFontSize: textFontSize)],
                   ),
-                )
-              )
+                ),
+              ),
             ],
           ),
         ),
-      )
+      ),
     );
   }
 }
 
 class Introduc extends StatelessWidget {
-  const Introduc({
-    super.key,
-    required this.textFontSize,
-  });
+  const Introduc({super.key, required this.textFontSize});
 
   final double textFontSize;
 
@@ -104,15 +99,24 @@ class Introduc extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
-              Text('ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),),
-            ],
-          ),
-        ],
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'ສະບາຍດີ',
+              style: TextStyle(
+                fontSize: textFontSize,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Text(
+              'ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.',
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
