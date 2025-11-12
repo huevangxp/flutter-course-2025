@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                 child: CarouselSlider(
                   options: CarouselOptions(
                     autoPlay: true,
-                    height: screenHeight * 0.55,
+                    height: screenHeight * 0.25,
                     viewportFraction: 1, // image fills the entire card
                     enlargeCenterPage: false,
                   ),
