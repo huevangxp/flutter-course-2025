@@ -90,7 +90,10 @@ class _HomePageState extends State<HomePage> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: CarouselSlider(
-                          options: CarouselOptions(disableCenter: true, height: screenHeight * 0.2),
+                          options: CarouselOptions(
+                            disableCenter: true, 
+                            aspectRatio: 16 / 9,
+                            height: screenHeight * 0.2),
                           
                           items: list
                               .map(
