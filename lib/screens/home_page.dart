@@ -105,7 +105,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
-              Introduc(textFontSize: textFontSize),
             ],
           ),
         ),
