@@ -112,7 +112,7 @@ class Introduc extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        const SizedBox(width: 16),
+        const SizedBox(height: 16),
         const Text(
           'ສະບາຍດີ',
           style: TextStyle(
