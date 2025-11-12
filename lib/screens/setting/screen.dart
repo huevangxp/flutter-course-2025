@@ -61,11 +61,9 @@ class SettingScreen extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Center(
-            child: Text(
-              'Edit Profile',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
+          child: Text(
+            'Edit Profile',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
         ),
       ),
@@ -80,11 +78,9 @@ class SettingScreen extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Center(
-            child: Text(
-              'Language',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
+          child: Text(
+            'Language',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
         ),
       ),
