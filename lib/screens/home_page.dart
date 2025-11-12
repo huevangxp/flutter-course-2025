@@ -107,12 +107,17 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
               Card(
                 elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+                child: Column(
+                  children: [
+                    Text(
+                      'ສະບາຍດີ',
+                      style: TextStyle(
+                        fontSize: textFontSize,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
                 ),
-                clipBehavior: Clip
-                    .antiAlias, // ensures child is clipped to the rounded border
-                child: Introduc(textFontSize: textFontSize),
               ),
             ],
           ),
