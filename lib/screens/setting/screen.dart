@@ -49,6 +49,17 @@ class SettingScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Card(
+                    child: Text('Edit Profile'),
+                  ),
+                  Card(
+                    child: Text('Language'),
+                  ),
+                ],
+              )
             ],
           ),
         ),
