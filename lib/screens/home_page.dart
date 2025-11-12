@@ -77,42 +77,31 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               // add card here
-              Card(
-                elevation: 0,
-                // add shadow
-                shadowColor: Colors.black,
-                // backgound color white
-                color: Colors.white,
-                child: Card(
-                  margin: EdgeInsets.zero,
-                  child: Column(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: CarouselSlider(
-                          options: CarouselOptions(
-                            disableCenter: true, 
-                            autoPlay: true,
-                            height: screenHeight * 0.2,
-                            viewportFraction: 0.8,
-                            
-                            
-                            ),
-                          
-                          items: list
-                              .map(
-                                (item) => Container(
-                                  color: Colors.teal,
-                                  child: Image.network(item.toString() , fit: BoxFit.cover,),
-                                ),
-                              )
-                              .toList(),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+             Card(
+  elevation: 4, // Add shadow depth
+  shadowColor: Colors.black.withOpacity(0.3),
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(12),
+  ),
+  clipBehavior: Clip.antiAlias, // ensures child is clipped to the rounded border
+  child: CarouselSlider(
+    options: CarouselOptions(
+      autoPlay: true,
+      height: screenHeight * 0.25,
+      viewportFraction: 1, // image fills the entire card
+      enlargeCenterPage: false,
+    ),
+    items: list.map(
+      (item) => Container(
+        width: double.infinity,
+        child: Image.network(
+          item.toString(),
+          fit: BoxFit.cover,
+        ),
+      ),
+    ).toList(),
+  ),
+)
             ],
           ),
         ),
