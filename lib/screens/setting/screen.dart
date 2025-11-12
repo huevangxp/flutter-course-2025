@@ -36,7 +36,8 @@ class SettingScreen extends StatelessWidget {
             children: [
                 Card(
                     color: Colors.white,
-                  child: ListTile(
+                    elevation: 0,
+                    child: ListTile(
                     leading: const Icon(Icons.person, color: Colors.teal),
                     title: const Text('ຕັ້ງຄ່າ'),
                   ),
