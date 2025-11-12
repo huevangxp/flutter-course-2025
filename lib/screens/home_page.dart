@@ -101,26 +101,28 @@ class Introduc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        // add title 
-        Text(
-          'ສະບາຍດີ',
-          style: TextStyle(
-            fontSize: textFontSize,
-            fontWeight: FontWeight.w700,
+    return Expanded(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          // add title 
+          Text(
+            'ສະບາຍດີ',
+            style: TextStyle(
+              fontSize: textFontSize,
+              fontWeight: FontWeight.w700,
+            ),
           ),
-        ),
-        const SizedBox(height: 16),
-        const Text(
-          'ສະບາຍດີ',
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
+          const SizedBox(height: 16),
+          const Text(
+            'ສະບາຍດີ',
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
