@@ -106,7 +106,7 @@ class Introduc extends StatelessWidget {
           Column(
             children: [
               Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
-              Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
+              Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w200),),
             ],
           )
         ],
