@@ -105,25 +105,20 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
-              Card(
-                color: Colors.white,
-                elevation: 0,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      'ສະບາຍດີ',
-                      style: TextStyle(
-                        fontSize: textFontSize,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    
-                  ],
-                ),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Card(
+                  color: Colors.white,
+                  elevation: 0,
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                )
+              ],
+            )
             ],
           ),
         ),
