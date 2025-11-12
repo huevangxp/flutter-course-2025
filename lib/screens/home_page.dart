@@ -92,7 +92,6 @@ class _HomePageState extends State<HomePage> {
                         child: CarouselSlider(
                           options: CarouselOptions(
                             disableCenter: true, 
-                            aspectRatio: 16 / 9,
                             autoPlay: true,
                             height: screenHeight * 0.2,
                             viewportFraction: 0.8,
