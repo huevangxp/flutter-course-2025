@@ -106,6 +106,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 16),
               Card(
+                color: Colors.white,
                 elevation: 0,
                 child: Column(
                   children: [
