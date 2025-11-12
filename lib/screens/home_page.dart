@@ -96,28 +96,33 @@ class Introduc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'ສະບາຍດີ',
-              style: TextStyle(
-                fontSize: textFontSize,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            Text(
-              'ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.',
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),
-            ),
-          ],
+   return SingleChildScrollView(
+  padding: const EdgeInsets.all(16.0),
+  child: Column(
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Text(
+        'ສະບາຍດີ',
+        style: TextStyle(
+          fontSize: textFontSize,
+          fontWeight: FontWeight.w700,
         ),
-      ],
-    );
+        textAlign: TextAlign.center, // centers text on small screens
+      ),
+      const SizedBox(height: 12),
+      Text(
+        'ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.',
+        style: const TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w300,
+          height: 1.6, // improves readability
+        ),
+        textAlign: TextAlign.center,
+      ),
+    ],
+  ),
+);
   }
 }
