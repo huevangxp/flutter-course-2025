@@ -1,3 +1,5 @@
+import 'package:carousel_slider/carousel_options.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:course/screens/setting/screen.dart';
 
@@ -38,6 +40,8 @@ class _HomePageState extends State<HomePage> {
       buttonWidth = screenWidth * 0.4;
       textFontSize = 20;
     }
+    
+    List<String> list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
     return Scaffold(
       appBar: AppBar(
@@ -78,7 +82,18 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     children: [
-                      
+                       Container(
+          child: CarouselSlider(
+        options: CarouselOptions(
+          disableCenter: true,
+        ),
+        items: list
+            .map((item) => Container(
+                  child: Text(item.toString()),
+                  color: Colors.green,
+                ))
+            .toList(),
+      )),
                     ],
                   ),
                 ),
