@@ -102,7 +102,6 @@ class Introduc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         // add title 
         Text(
@@ -112,8 +111,15 @@ class Introduc extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
+        const SizedBox(width: 16),
+        const Text(
+          'ສະບາຍດີ',
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
         // add icon
-        const Icon(Icons.settings, color: Colors.teal),
       ],
     );
   }
