@@ -102,6 +102,7 @@ class Introduc extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               'ສະບາຍດີ',
@@ -110,11 +111,9 @@ class Introduc extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            Expanded(
-              child: Text(
-                'ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.',
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),
-              ),
+            Text(
+              'ພາສາລາວມີລັກສະນະພິເສດ ໃນການຂຽນ ແລະ ຮູບແບບຂອງຕົວອັກສອນ, ຊຶ່ງເຮັດໃຫ້ການທົດສອບນີ້ເປັນປະໂຫຍດໃນການອອກແບບ. ບາງຄັ້ງຂໍ້ຄວາມທົດສອບອາດຈະຍາວຫຼາຍ ຫຼື ສັ້ນຕາມຄວາມຕ້ອງການ ເພື່ອໃຫ້ເຫັນວ່າຮູບແບບຂອງອັກສອນສາມາດປັບໄດ້ດີແຄ່ໃດ. ນີ້ແມ່ນຂໍ້ຄວາມລອງສຳລັບການອອກແບບຫນ້າຈໍທົດສອບແລະການຈັດວາງຕົວອັກສອນໃນພາສາລາວ.',
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),
             ),
           ],
         ),
