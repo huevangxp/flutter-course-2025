@@ -104,7 +104,7 @@ class Introduc extends StatelessWidget {
     return Row(
       children: [
           Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
               Text('ສະບາຍດີ', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),),
