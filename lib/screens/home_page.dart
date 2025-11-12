@@ -106,7 +106,7 @@ class Introduc extends StatelessWidget {
       children: [
         // add title 
         Text(
-          '',
+          'ສະບາຍດີຕໍ່',
           style: TextStyle(
             fontSize: textFontSize,
             fontWeight: FontWeight.w700,
