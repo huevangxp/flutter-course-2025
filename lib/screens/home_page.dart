@@ -101,7 +101,7 @@ class Introduc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
         // add title 
         Text(
