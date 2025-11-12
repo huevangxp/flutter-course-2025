@@ -119,7 +119,6 @@ class Introduc extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        // add icon
       ],
     );
   }
