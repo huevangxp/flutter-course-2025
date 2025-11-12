@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       buttonWidth = screenWidth * 0.4;
       textFontSize = 20;
     }
-    
+
     List<String> list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
     return Scaffold(
@@ -82,17 +82,17 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(0.0),
                   child: Column(
                     children: [
-                       CarouselSlider(
-        options: CarouselOptions(
-          disableCenter: true,
-        ),
-        items: list
-            .map((item) => Container(
-                  child: Text(item.toString()),
-                  color: Colors.green,
-                ))
-            .toList(),
-      ),
+                      CarouselSlider(
+                        options: CarouselOptions(disableCenter: true),
+                        items: list
+                            .map(
+                              (item) => Container(
+                                child: Text(item.toString()),
+                                color: Colors.green,
+                              ),
+                            )
+                            .toList(),
+                      ),
                     ],
                   ),
                 ),
@@ -119,7 +119,7 @@ class Introduc extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.info, size: textFontSize * 2, color: Colors.red,),
+          Icon(Icons.info, size: textFontSize * 2, color: Colors.red),
           SizedBox(height: 12),
           Text(
             'ສະບາຍດີ',
