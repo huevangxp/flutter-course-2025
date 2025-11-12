@@ -103,22 +103,11 @@ class Introduc extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-          // add title 
-          Text(
-            'ສະບາຍດີ',
-            style: TextStyle(
-              fontSize: textFontSize,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-          const SizedBox(width: 16),
-          const Text(
-            'ສະບາຍດີ',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
+          Column(
+            children: [
+              Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
+            ],
+          )
         ],
     );
   }
