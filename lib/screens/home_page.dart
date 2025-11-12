@@ -105,6 +105,15 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
+              Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                clipBehavior: Clip
+                    .antiAlias, // ensures child is clipped to the rounded border
+                child: Introduc(textFontSize: textFontSize),
+              ),
             ],
           ),
         ),
