@@ -82,8 +82,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(0.0),
                   child: Column(
                     children: [
-                       Container(
-          child: CarouselSlider(
+                       CarouselSlider(
         options: CarouselOptions(
           disableCenter: true,
         ),
@@ -93,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.green,
                 ))
             .toList(),
-      )),
+      ),
                     ],
                   ),
                 ),
