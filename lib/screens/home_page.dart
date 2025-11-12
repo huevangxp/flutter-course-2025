@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               // add card here
              Card(
   elevation: 4, // Add shadow depth
-  shadowColor: Colors.black.withOpacity(0.3),
+  shadowColor: Colors.black.withValues(0, 0, 0, 0.5),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(12),
   ),
