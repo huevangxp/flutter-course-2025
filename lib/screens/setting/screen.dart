@@ -30,8 +30,11 @@ class SettingScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [const Text('ຕັ້ງຄ່າ')],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [const Text('ຕັ້ງຄ່າ')],
+          ),
         ),
       ),
     );
