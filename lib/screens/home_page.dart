@@ -103,7 +103,7 @@ class Introduc extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.info, size: textFontSize),
+          Icon(Icons.info, size: textFontSize * 2),
           Text(
             'ສະບາຍດີ',
             style: TextStyle(
