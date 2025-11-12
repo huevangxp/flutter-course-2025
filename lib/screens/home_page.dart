@@ -16,12 +16,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void _onButtonPressed() {
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('Button pressed')));
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     // Get screen size
