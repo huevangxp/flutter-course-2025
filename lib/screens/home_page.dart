@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
          Container(
   color: Colors.white, // makes background white and full width
-  width: double.infinity, // expands to full available width
+  // width: double.infinity, // expands to full available width
   child: Row(
     mainAxisAlignment: MainAxisAlignment.start, // aligns children to start
     crossAxisAlignment: CrossAxisAlignment.center,
@@ -125,11 +125,7 @@ class _HomePageState extends State<HomePage> {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            Icon(
-              Icons.info,
-              size: textFontSize * 2,
-              color: Colors.red,
-            ),
+           
           ],
         ),
       ),
