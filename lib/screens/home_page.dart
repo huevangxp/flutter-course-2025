@@ -95,8 +95,8 @@ class _HomePageState extends State<HomePage> {
                           items: list
                               .map(
                                 (item) => Container(
-                                  child: Text(item.toString() , style: TextStyle(color: Colors.white),),
                                   color: Colors.teal,
+                                  child: Image.network(item.toString() , fit: BoxFit.cover,),
                                 ),
                               )
                               .toList(),
