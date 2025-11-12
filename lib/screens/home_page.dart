@@ -111,6 +111,8 @@ class Introduc extends StatelessWidget {
               Text('ສະບາຍດີ', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w200),),
             ],
           ),
+          const SizedBox(width: 16),
+          const Icon(Icons.arrow_forward_ios, color: Colors.teal),
         ],
     );
   }
