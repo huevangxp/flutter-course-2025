@@ -120,7 +120,6 @@ class Introduc extends StatelessWidget {
             ),
           ),
         ],
-      ),
     );
   }
 }
