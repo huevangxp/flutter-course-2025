@@ -29,7 +29,7 @@ class SettingScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [const Text('ຕັ້ງຄ່າ')],
         ),
