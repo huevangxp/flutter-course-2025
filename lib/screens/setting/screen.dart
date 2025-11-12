@@ -58,6 +58,15 @@ class SettingScreen extends StatelessWidget {
                   Card(
                     child: Text('Language'),
                   ),
+                  Card(
+                    child: Text('Notification'),
+                  ),
+                  Card(
+                    child: Text('Help'),
+                  ),
+                  Card(
+                    child: Text('About'),
+                  ),
                 ],
               )
             ],
