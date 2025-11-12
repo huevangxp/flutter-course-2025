@@ -54,7 +54,8 @@ class SettingScreen extends StatelessWidget {
   children: [
     Expanded(
       child: Card(
-        elevation: 4,
+        elevation: 0,
+        color: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -72,7 +73,8 @@ class SettingScreen extends StatelessWidget {
     SizedBox(width: 10), // space between the two cards
     Expanded(
       child: Card(
-        elevation: 4,
+        color: Colors.white,
+        elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
