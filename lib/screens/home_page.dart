@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                   elevation: 0,
                   child: Column(
                     children: [
-                      
+                      Text('ສະບາຍດີ', style: TextStyle(fontSize: textFontSize, fontWeight: FontWeight.w700),),
                     ],
                   ),
                 )
