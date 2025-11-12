@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               // add card here
               Card(
-                elevation: 4, // Add shadow depth
+                elevation: 0, // Add shadow depth
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
