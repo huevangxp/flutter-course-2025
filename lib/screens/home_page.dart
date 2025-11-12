@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: CarouselSlider(
-                          options: CarouselOptions(disableCenter: true),
+                          options: CarouselOptions(disableCenter: false ),
                           
                           items: list
                               .map(
