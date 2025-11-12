@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               // add card here
               Card(
-                elevation: 4,
+                elevation: 0,
                 // add shadow
                 shadowColor: Colors.black,
                 // backgound color white
@@ -106,7 +106,7 @@ class Introduc extends StatelessWidget {
       children: [
         // add title 
         Text(
-          'ໜ້າຫຼັກ',
+          '',
           style: TextStyle(
             fontSize: textFontSize,
             fontWeight: FontWeight.w700,
