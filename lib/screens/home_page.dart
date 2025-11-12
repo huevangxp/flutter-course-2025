@@ -77,30 +77,33 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               // add card here
-             Card(
-  elevation: 4, // Add shadow depth
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(12),
-  ),
-  clipBehavior: Clip.antiAlias, // ensures child is clipped to the rounded border
-  child: CarouselSlider(
-    options: CarouselOptions(
-      autoPlay: true,
-      height: screenHeight * 0.25,
-      viewportFraction: 1, // image fills the entire card
-      enlargeCenterPage: false,
-    ),
-    items: list.map(
-      (item) => Container(
-        width: double.infinity,
-        child: Image.network(
-          item.toString(),
-          fit: BoxFit.cover,
-        ),
-      ),
-    ).toList(),
-  ),
-)
+              Card(
+                elevation: 4, // Add shadow depth
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                clipBehavior: Clip
+                    .antiAlias, // ensures child is clipped to the rounded border
+                child: CarouselSlider(
+                  options: CarouselOptions(
+                    autoPlay: true,
+                    height: screenHeight * 0.25,
+                    viewportFraction: 1, // image fills the entire card
+                    enlargeCenterPage: false,
+                  ),
+                  items: list
+                      .map(
+                        (item) => Container(
+                          width: double.infinity,
+                          child: Image.network(
+                            item.toString(),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      )
+                      .toList(),
+                ),
+              ),
             ],
           ),
         ),
