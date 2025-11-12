@@ -83,8 +83,8 @@ class _HomePageState extends State<HomePage> {
                 shadowColor: Colors.black,
                 // backgound color white
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(0.0),
+                child: Card(
+                  margin: EdgeInsets.zero,
                   child: Column(
                     children: [
                       ClipRRect(
