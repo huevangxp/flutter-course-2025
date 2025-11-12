@@ -93,7 +93,12 @@ class _HomePageState extends State<HomePage> {
                           options: CarouselOptions(
                             disableCenter: true, 
                             aspectRatio: 16 / 9,
-                            height: screenHeight * 0.2),
+                            autoPlay: true,
+                            height: screenHeight * 0.2,
+                            viewportFraction: 0.8,
+                            
+                            
+                            ),
                           
                           items: list
                               .map(
