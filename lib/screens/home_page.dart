@@ -82,17 +82,20 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(0.0),
                   child: Column(
                     children: [
-                      CarouselSlider(
-                        options: CarouselOptions(disableCenter: true),
-                        
-                        items: list
-                            .map(
-                              (item) => Container(
-                                child: Text(item.toString() , style: TextStyle(color: Colors.white),),
-                                color: Colors.teal,
-                              ),
-                            )
-                            .toList(),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: CarouselSlider(
+                          options: CarouselOptions(disableCenter: true),
+                          
+                          items: list
+                              .map(
+                                (item) => Container(
+                                  child: Text(item.toString() , style: TextStyle(color: Colors.white),),
+                                  color: Colors.teal,
+                                ),
+                              )
+                              .toList(),
+                        ),
                       ),
                     ],
                   ),
