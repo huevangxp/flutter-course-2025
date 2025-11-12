@@ -87,12 +87,9 @@ class _HomePageState extends State<HomePage> {
                         
                         items: list
                             .map(
-                              (item) => ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Container(
-                                  child: Text(item.toString() , style: TextStyle(color: Colors.white),),
-                                  color: Colors.teal,
-                                ),
+                              (item) => Container(
+                                child: Text(item.toString() , style: TextStyle(color: Colors.white),),
+                                color: Colors.teal,
                               ),
                             )
                             .toList(),
