@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       CarouselSlider(
                         options: CarouselOptions(disableCenter: true),
-                        height: screenHeight * 0.2,
+                        
                         items: list
                             .map(
                               (item) => Container(
