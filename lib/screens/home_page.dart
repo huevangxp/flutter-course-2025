@@ -41,7 +41,12 @@ class _HomePageState extends State<HomePage> {
       textFontSize = 20;
     }
 
-    List<String> list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+    List<String> list = [
+      // image url
+      'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
+      'https://cdn.pixabay.com/photo/2022/08/26/00/07/bird-7411459_1280.jpg',
+      'https://cdn.pixabay.com/photo/2023/06/01/13/07/annas-hummingbird-8033578_1280.jpg',
+    ];
 
     return Scaffold(
       appBar: AppBar(
