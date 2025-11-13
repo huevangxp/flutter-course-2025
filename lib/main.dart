@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme: ThemeData(
+        fontFamily: 'NotoSansLao',
         bannerTheme: MaterialBannerThemeData(
           backgroundColor: Colors.teal,
           contentTextStyle: const TextStyle(color: Colors.white, fontSize: 16),
