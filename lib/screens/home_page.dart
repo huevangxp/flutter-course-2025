@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               'ສະບາຍດີ',
                               style: TextStyle(
-                                fontSize: textFontSize, // your custom variable
+                                fontSize: textFontSize,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.black87,
                               ),
