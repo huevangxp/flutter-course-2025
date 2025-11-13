@@ -105,33 +105,33 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
-         Container(
-  color: Colors.white, // makes background white and full width
-  width: double.infinity, // expands to full available width
-  child: Row(
-    mainAxisAlignment: MainAxisAlignment.start, // aligns children to start
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      Card(
-        color: Colors.white,
-        elevation: 0,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'ສະບາຍດີ',
-              style: TextStyle(
-                fontSize: textFontSize,
-                fontWeight: FontWeight.w700,
+              Container(
+                color: Colors.white, // makes background white and full width
+                width: double.infinity, // expands to full available width
+                child: Row(
+                  mainAxisAlignment:
+                      MainAxisAlignment.start, // aligns children to start
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Card(
+                      color: Colors.white,
+                      elevation: 0,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'ສະບາຍດີ',
+                            style: TextStyle(
+                              fontSize: textFontSize,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-           
-          ],
-        ),
-      ),
-    ],
-  ),
-)
             ],
           ),
         ),
