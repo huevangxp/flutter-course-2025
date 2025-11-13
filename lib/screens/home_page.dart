@@ -107,9 +107,6 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
               Card(
                 elevation: 4,
-                margin: const EdgeInsets.all(
-                  8,
-                ), // adds breathing room around the card
                 child: Container(
                   width: double.infinity,
                   color: Colors.white,
