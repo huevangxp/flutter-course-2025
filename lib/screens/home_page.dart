@@ -110,9 +110,7 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   width: double.infinity,
                   color: Colors.white,
-                  padding: const EdgeInsets.all(
-                    16,
-                  ), // adds padding inside the card
+                  padding: const EdgeInsets.all(16),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
