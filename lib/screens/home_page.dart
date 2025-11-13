@@ -110,7 +110,6 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   color: Colors.white, // makes background white and full width
                   width: double.infinity, // expands to full available width
-
                   child: Row(
                     mainAxisAlignment:
                         MainAxisAlignment.start, // aligns children to start
