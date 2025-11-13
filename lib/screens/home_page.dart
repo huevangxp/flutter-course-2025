@@ -107,30 +107,42 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
               Card(
                 elevation: 4,
+                margin: const EdgeInsets.all(
+                  8,
+                ), // adds breathing room around the card
                 child: Container(
-                  color: Colors.white, // makes background white and full width
-                  width: double.infinity, // expands to full available width
+                  width: double.infinity,
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(
+                    16,
+                  ), // adds padding inside the card
                   child: Row(
-                    mainAxisAlignment:
-                        MainAxisAlignment.start, // aligns children to start
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Card(
-                        color: Colors.white,
-                        elevation: 0,
+                      // Optionally add an image or icon here
+                      Expanded(
                         child: Column(
-                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'ສະບາຍດີ',
                               style: TextStyle(
-                                fontSize: textFontSize,
+                                fontSize: textFontSize, // your custom variable
                                 fontWeight: FontWeight.w700,
+                                color: Colors.black87,
                               ),
                             ),
+                            const SizedBox(height: 8),
                             Text(
                               'ນີ້ແມ່ນຂໍ້ຄວາມທົດລອງສໍາລັບການອອກແບບແອັບລາວທີ່ໃຊ້ເພື່ອສະແດງຮູບແບບ ແລະ ການຈັດວາງຂໍ້ຄວາມໃນໜ້າຈໍທົດລອງ. ຄໍາເຫຼົ່ານີ້ບໍ່ມີຄວາມໝາຍຈິງແຕ່ເປັນຕົວຢ່າງ ສໍາລັບການທົດສອບການຈັດຮູບແບບ ແລະ ການອ່ານຂໍ້ຄວາມ.',
                               textAlign: TextAlign.justify,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                height: 1.5,
+                                color: Colors.black87,
+                              ),
+                              softWrap: true,
+                              overflow: TextOverflow.visible,
                             ),
                           ],
                         ),
