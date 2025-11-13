@@ -105,47 +105,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
-              Card(
-                elevation: 4,
-                child: Container(
-                  width: double.infinity,
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(16),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Optionally add an image or icon here
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'ສະບາຍດີ',
-                              style: TextStyle(
-                                fontSize: textFontSize,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.black87,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              'ນີ້ແມ່ນຂໍ້ຄວາມທົດລອງສໍາລັບການອອກແບບແອັບລາວທີ່ໃຊ້ເພື່ອສະແດງຮູບແບບ ແລະ ການຈັດວາງຂໍ້ຄວາມໃນໜ້າຈໍທົດລອງ. ຄໍາເຫຼົ່ານີ້ບໍ່ມີຄວາມໝາຍຈິງແຕ່ເປັນຕົວຢ່າງ ສໍາລັບການທົດສອບການຈັດຮູບແບບ ແລະ ການອ່ານຂໍ້ຄວາມ.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize: 16,
-                                height: 1.5,
-                                color: Colors.black87,
-                              ),
-                              softWrap: true,
-                              overflow: TextOverflow.visible,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              Introduc(textFontSize: textFontSize),
             ],
           ),
         ),
