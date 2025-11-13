@@ -128,11 +128,13 @@ class _HomePageState extends State<HomePage> {
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
-                            Text(
-                              'ນີ້ແມ່ນຂໍ້ຄວາມທົດລອງສໍາລັບການອອກແບບແອັບລາວທີ່ໃຊ້ເພື່ອສະແດງຮູບແບບ ແລະ ການຈັດວາງຂໍ້ຄວາມໃນໜ້າຈໍທົດລອງ. ຄໍາເຫຼົ່ານີ້ບໍ່ມີຄວາມໝາຍຈິງແຕ່ເປັນຕົວຢ່າງ ສໍາລັບການທົດສອບການຈັດຮູບແບບ ແລະ ການອ່ານຂໍ້ຄວາມ.',
-                              textAlign: TextAlign.justify,
-                              softWrap: true,
-                              overflow: TextOverflow.visible,
+                            Expanded(
+                              child: Text(
+                                'ນີ້ແມ່ນຂໍ້ຄວາມທົດລອງສໍາລັບການອອກແບບແອັບລາວທີ່ໃຊ້ເພື່ອສະແດງຮູບແບບ ແລະ ການຈັດວາງຂໍ້ຄວາມໃນໜ້າຈໍທົດລອງ. ຄໍາເຫຼົ່ານີ້ບໍ່ມີຄວາມໝາຍຈິງແຕ່ເປັນຕົວຢ່າງ ສໍາລັບການທົດສອບການຈັດຮູບແບບ ແລະ ການອ່ານຂໍ້ຄວາມ.',
+                                textAlign: TextAlign.justify,
+                                softWrap: true,
+                                overflow: TextOverflow.visible,
+                              ),
                             ),
                           ],
                         ),
