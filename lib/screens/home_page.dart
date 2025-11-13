@@ -120,8 +120,6 @@ class _HomePageState extends State<HomePage> {
                         elevation: 0,
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
                               'ສະບາຍດີ',
@@ -133,8 +131,6 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               'ນີ້ແມ່ນຂໍ້ຄວາມທົດລອງສໍາລັບການອອກແບບແອັບລາວທີ່ໃຊ້ເພື່ອສະແດງຮູບແບບ ແລະ ການຈັດວາງຂໍ້ຄວາມໃນໜ້າຈໍທົດລອງ. ຄໍາເຫຼົ່ານີ້ບໍ່ມີຄວາມໝາຍຈິງແຕ່ເປັນຕົວຢ່າງ ສໍາລັບການທົດສອບການຈັດຮູບແບບ ແລະ ການອ່ານຂໍ້ຄວາມ.',
                               textAlign: TextAlign.justify,
-                              softWrap: true,
-                              overflow: TextOverflow.visible,
                             ),
                           ],
                         ),
