@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Card(
                         color: Colors.white,
-
+                        elevation: 0,
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
