@@ -120,6 +120,8 @@ class _HomePageState extends State<HomePage> {
                         elevation: 0,
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
                               'ສະບາຍດີ',
