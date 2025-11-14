@@ -1,4 +1,5 @@
 import 'package:course/screens/home_page.dart';
+import 'package:course/screens/setting/screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     HomePage(), // ✅ FIXED
     Center(child: Text('ກ່ຽວກັບເຮົາ')),
     Center(child: Text('ສິນຄ້າ')),
-    Center(child: Text('ໂປຼມໄຟສ໌')),
+    SettingScreen(),
   ];
 
   void _onItemTapped(int index) {
