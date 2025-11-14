@@ -34,8 +34,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'About'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ໜ້າຫຼັກ'),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'ກ່ຽວກັບເຮົາ'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
       ),
