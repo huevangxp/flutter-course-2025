@@ -14,7 +14,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   // List of pages to display
   final List<Widget> _pages = const [
     HomePage(), // ✅ FIXED
-    Center(child: Text('Search Page')),
+    Center(child: Text('About Page')),
     Center(child: Text('Profile Page')),
   ];
 
