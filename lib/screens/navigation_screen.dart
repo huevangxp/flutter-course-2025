@@ -36,7 +36,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ໜ້າຫຼັກ'),
           BottomNavigationBarItem(icon: Icon(Icons.info), label: 'ກ່ຽວກັບເຮົາ'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'ໂປຼມໄຟສ໌'),
         ],
       ),
     );
