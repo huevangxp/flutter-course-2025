@@ -1,6 +1,6 @@
 // import 'package:course/screens/setting/screen.dart';
 import 'package:flutter/material.dart';
-import 'package:course/screens/home_page.dart';
+import 'package:course/screens/navigation_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Define named routes
-      home: const HomePage(),
+      home: const BottomNavigationScreen(),
     );
   }
 }
