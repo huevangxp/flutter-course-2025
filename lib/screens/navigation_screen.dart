@@ -33,6 +33,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         mouseCursor: SystemMouseCursors.grab,
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.teal,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white70,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: const [
