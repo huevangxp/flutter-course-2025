@@ -13,12 +13,11 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
 
   // List of pages to display
   final List<Widget> _pages = const [
-    Center(child: HomePage()),
+    HomePage(), // ✅ FIXED
     Center(child: Text('Search Page')),
     Center(child: Text('Profile Page')),
   ];
 
-  // When a navigation item is tapped
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -34,7 +33,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         mouseCursor: SystemMouseCursors.grab,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        items: const <BottomNavigationBarItem>[
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
