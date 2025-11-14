@@ -14,8 +14,9 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   // List of pages to display
   final List<Widget> _pages = const [
     HomePage(), // ✅ FIXED
-    Center(child: Text('About Page')),
-    Center(child: Text('Profile Page')),
+    Center(child: Text('ກ່ຽວກັບເຮົາ')),
+    Center(child: Text('ສິນຄ້າ')),
+    Center(child: Text('ໂປຼມໄຟສ໌')),
   ];
 
   void _onItemTapped(int index) {
@@ -40,7 +41,10 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'ໜ້າຫຼັກ'),
           BottomNavigationBarItem(icon: Icon(Icons.info), label: 'ກ່ຽວກັບເຮົາ'),
-          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'ສິນຄ້າ'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            label: 'ສິນຄ້າ',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'ໂປຼມໄຟສ໌'),
         ],
       ),
