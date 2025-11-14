@@ -1,3 +1,4 @@
+import 'package:course/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
@@ -12,7 +13,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
 
   // List of pages to display
   final List<Widget> _pages = const [
-    Center(child: Text('Home Page')),
+    Center(child: HomePage()),
     Center(child: Text('Search Page')),
     Center(child: Text('Profile Page')),
   ];
