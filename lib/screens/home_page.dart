@@ -64,14 +64,11 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.teal,
         actions: [
-        FilledButton(
-          style: FilledButton.styleFrom(
-            backgroundColor: Colors.white,
+          IconButton(
+            icon: const Icon(Icons.settings, color: Colors.white),
+            tooltip: 'Settings',
+            onPressed: _onSettingsPressed,
           ),
-          child: const Icon(Icons.settings, color: Colors.white),
-          tooltip: 'Settings',
-          onPressed: _onSettingsPressed,
-        ),
         ],
       ),
       body: SingleChildScrollView(
