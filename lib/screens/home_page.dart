@@ -102,6 +102,15 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const LoginScreen()),
+                  );
+                },
+                child: const Text('Login'),
+              ),
             ],
           ),
         ),
