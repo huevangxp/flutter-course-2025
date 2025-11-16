@@ -11,18 +11,14 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        alignment: Alignment.topLeft,
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text('icon company'),
-            Text('field input login and button'),
-            Text('forget pass and signup')
-          ],
-        )
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('icon company'),
+          Text('field input login and button'),
+          Text('forget pass and signup')
+        ],
       )
     );
   }
