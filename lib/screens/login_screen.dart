@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('icon company'),
+          Image.asset('assets/images/appIcon.png', fit: BoxFit.contain),
           Text('field input login and button'),
           Text('forget pass and signup')
         ],
