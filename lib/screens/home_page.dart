@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.teal,
         actions: [
-          IconButton(
+          FilledButton(
             icon: const Icon(Icons.settings, color: Colors.white),
             tooltip: 'Settings',
             onPressed: _onSettingsPressed,
