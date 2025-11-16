@@ -26,18 +26,15 @@ class _HomePageState extends State<HomePage> {
 
     // Define responsive widths
     double textWidth = screenWidth * 0.5;
-    double buttonWidth = screenWidth * 0.5;
     double textFontSize = 18;
 
     if (screenWidth > 800) {
       // Tablet/Desktop
       textWidth = screenWidth * 0.3;
-      buttonWidth = screenWidth * 0.3;
       textFontSize = 24;
     } else if (screenWidth > 500) {
       // Medium devices
       textWidth = screenWidth * 0.4;
-      buttonWidth = screenWidth * 0.4;
       textFontSize = 20;
     }
 
