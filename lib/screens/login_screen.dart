@@ -13,6 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Container(
         alignment: Alignment.topLeft,
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             Text('icon company'),
