@@ -16,7 +16,6 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
-         
           children: [
             Image.asset('assets/images/appIcon.png', fit: BoxFit.contain, height: 100),
             Text('field input login and button'),
