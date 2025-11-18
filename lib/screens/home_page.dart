@@ -84,7 +84,6 @@ class _HomePageState extends State<HomePage> {
               Category(categoryList),
               const SizedBox(height: 16),
               Container(
-                height: double.infinity,
                 color: Colors.teal,
                 child: Text(
                   'ການຂົ້າເຂົ້າ',
