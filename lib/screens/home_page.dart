@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
         itemBuilder: (context, index) {
           bool isSelected = categoryList[index] == selectedCategory;
           return Padding(
-            padding: const EdgeInsets.only(right: 8.0),
+            padding: const EdgeInsets.only(right: 4.0),
             child: GestureDetector(
               onTap: () {
                 setState(() {
