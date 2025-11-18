@@ -17,6 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
+          margin: const EdgeInsets.all(16),
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
