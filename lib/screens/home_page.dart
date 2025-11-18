@@ -83,14 +83,19 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               Category(categoryList),
               const SizedBox(height: 16),
-              Container(
-                padding: const EdgeInsets.all(16),
-                color: Colors.teal,
-                child: Text(
-                  'ການຂົ້າເຂົ້າ',
-                  style: TextStyle(color: Colors.white),
-                ),
+              Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    color: Colors.teal,
+                    child: Text(
+                      'ການຂົ້າເຂົ້າ',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
               ),
+              const SizedBox(height: 16),
             ],
           ),
         ),
