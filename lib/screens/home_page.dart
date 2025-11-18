@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
 
               // Category list - Fixed to use SizedBox instead of Expanded
               SizedBox(
-                height: 10, // Fixed height for the horizontal list
+                height: 20, // Fixed height for the horizontal list
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryList.length,
