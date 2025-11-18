@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 26),
                   const Text(
-                    'ເຂົ້າລົງ',
+                    'ກະລຸນາປ້ອນຂໍ້ມູນເຂົ້າສຸ່ລະບົບ',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 16),
