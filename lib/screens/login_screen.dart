@@ -72,7 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () {},
                     child: const Text(
                       'ເຂົ້າລົງ',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ],
