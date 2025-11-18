@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       minimumSize: const Size(double.infinity, 50),
                     ),
                     onPressed: () {},
-                    child: const Text('ເຂົ້າລົງ'),
+                    child: const Text('ເຂົ້າລົງ' style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
