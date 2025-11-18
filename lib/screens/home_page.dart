@@ -84,26 +84,8 @@ class _HomePageState extends State<HomePage> {
               Category(categoryList),
               const SizedBox(height: 16),
               Container(
-                margin: const EdgeInsets.only(bottom: 8),
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.teal,
-                  borderRadius: BorderRadius.circular(8),
-                ),
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.logout, color: Colors.white, size: 24),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'ອອກຈາກລະບົບ',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
+                  children: [Text('ການອອກຈາກລະບົບ'), Icon(Icons.logout)],
                 ),
               ),
               const SizedBox(height: 16),
