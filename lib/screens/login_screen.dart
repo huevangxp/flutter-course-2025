@@ -82,8 +82,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       labelText: 'ລະຫັດຜ່ານ',
                       filled: true,
-                      fillColor: Colors.grey.shade100,
+                      fillColor: Colors.teal.withOpacity(0.1),
                       prefixIcon: const Icon(Icons.lock_outline),
+                      prefixIconColor: Colors.teal,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
