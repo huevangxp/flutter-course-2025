@@ -32,8 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-               
-
+                children: [
                   // Phone Number
                   TextField(
                     keyboardType: TextInputType.phone,
