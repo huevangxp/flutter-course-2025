@@ -130,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: const Text(
                           'ລືມລະຫັດຜ່ານ?',
                           style: TextStyle(color: Colors.teal),
-                          textAlign: TextAlign.center,
+                          textAlign: TextAlign.end,
                         ),
                       ),
                     ],
