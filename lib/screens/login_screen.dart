@@ -74,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       'ເຂົ້າລົງ',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
