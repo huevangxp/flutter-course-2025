@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             Container(
               margin: const EdgeInsets.all(16),
-              color: Colors.red.withOpacity(0.5),
+              color: Colors.black.withOpacity(0.5),
               // add width and height
               width: double.infinity,
               height: 600,
