@@ -81,6 +81,13 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
 
               // add ground category here
+              ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: categoryList.length,
+                itemBuilder: (context, index) {
+                  return Text(categoryList[index]);
+                },
+              ),
             ],
           ),
         ),
