@@ -19,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           clipBehavior: Clip.antiAlias,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            : MainAxisAlignment.center,
             children: [
               Image.asset(
                 'assets/images/appIcon.png',
