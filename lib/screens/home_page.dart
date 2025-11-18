@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       margin: const EdgeInsets.only(right: 16),
-                      child: Text(categoryList[index]),
+                      child: Card(child: Text(categoryList[index])),
                     );
                   },
                 ),
