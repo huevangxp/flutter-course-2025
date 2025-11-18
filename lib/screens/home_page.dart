@@ -83,7 +83,13 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               Category(categoryList),
               const SizedBox(height: 16),
-              Row(children: [Text('ການອອກຈາກລະບົບ'), Icon(Icons.logout)]),
+              Row(
+                children: [
+                  Text('ການອອກຈາກລະບົບ'),
+                  SizedBox(width: 10),
+                  Icon(Icons.logout),
+                ],
+              ),
               const SizedBox(height: 16),
             ],
           ),
