@@ -38,6 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
+                      hintText: 'Email',
                     ),
                   ),
                   const SizedBox(height: 16),
