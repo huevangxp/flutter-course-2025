@@ -14,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Center(
         child: Container(
           margin: const EdgeInsets.all(16),
-
+          color: Colors.red,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
