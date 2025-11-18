@@ -63,6 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       filled: true,
                       fillColor: Colors.teal.withOpacity(0.1),
                       prefixIcon: const Icon(Icons.phone_android),
+                      prefixIconColor: Colors.teal,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
