@@ -83,27 +83,30 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               Category(categoryList),
               const SizedBox(height: 16),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    color: Colors.teal,
-                    child: Text(
-                      'ການຂົ້າເຂົ້າ',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    color: Colors.teal,
-                    child: Text(
-                      'ການຂົ້າເຂົ້າ',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ],
-              ),
+             Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.teal.shade700,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.logout, color: Colors.white),
+          const SizedBox(width: 12),
+          const Text(
+            'ການອອກຈາກລະບົບ',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
+    ),
+  ],
+),
               const SizedBox(height: 16),
             ],
           ),
