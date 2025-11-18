@@ -81,6 +81,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
               // add ground category here
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
