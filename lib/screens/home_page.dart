@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.logout, color: Colors.white),
-                    const SizedBox(width: 12),
+                    const SizedBox(height: 12),
                     const Text(
                       'ອອກຈາກລະບົບ',
                       style: TextStyle(
