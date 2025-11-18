@@ -46,6 +46,8 @@ class _HomePageState extends State<HomePage> {
       'https://cdn.pixabay.com/photo/2023/06/01/13/07/annas-hummingbird-8033578_1280.jpg',
     ];
 
+    List<String> categoryList = ['ເຂົ້າ', 'ນ້ຳ', 'ເຫຼືອ', 'ເກີດ'];
+
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
@@ -77,6 +79,8 @@ class _HomePageState extends State<HomePage> {
               // add card here
               ImageSlicde(screenHeight, list),
               SizedBox(height: 16),
+
+              // add ground category here
             ],
           ),
         ),
