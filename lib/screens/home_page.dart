@@ -91,6 +91,7 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.logout, color: Colors.white),
                     const SizedBox(width: 12),
