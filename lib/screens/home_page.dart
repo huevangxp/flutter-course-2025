@@ -88,7 +88,9 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text('ໜ້າຫຼັກ'),
+                    child: Row(
+                      children: [Icon(Icons.category), Text('ໜ້າຫຼັກ')],
+                    ),
                   ),
                   SizedBox(width: 16),
                   Text('ໜ້າຫຼັກ'),
