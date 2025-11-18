@@ -11,22 +11,20 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Card(
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-        clipBehavior: Clip.antiAlias,
+      body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/appIcon.png', fit: BoxFit.contain, height: 100),
-            Text('field input login and button'),
-            Text('forget pass and signup')
+            Image.asset(
+              'assets/images/appIcon.png',
+              fit: BoxFit.contain,
+              height: 100,
+            ),
+            Text('field input login and button', textAlign: TextAlign.center),
+            Text('forget pass and signup', textAlign: TextAlign.center),
           ],
         ),
-      )
+      ),
     );
   }
 }
