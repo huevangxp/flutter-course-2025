@@ -99,8 +99,6 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 16),
-                  Text('ໜ້າຫຼັກ'),
                 ],
               ),
             ],
