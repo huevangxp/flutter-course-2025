@@ -90,12 +90,12 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.teal,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Row(
+                child: Column(
                   children: [
                     const Icon(Icons.logout, color: Colors.white),
                     const SizedBox(width: 12),
                     const Text(
-                      'ການອອກຈາກລະບົບ',
+                      'ອອກຈາກລະບົບ',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,
