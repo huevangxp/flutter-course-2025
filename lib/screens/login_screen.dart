@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       labelText: 'ເບີໂທ',
                       filled: true,
-                      fillColor: Colors.teal.withOpacity(0.1),
+                      fillColor: Colors.white.withOpacity(0.1),
                       prefixIcon: const Icon(Icons.phone_android),
                       prefixIconColor: Colors.teal,
                       border: OutlineInputBorder(
