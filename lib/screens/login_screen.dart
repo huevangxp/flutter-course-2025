@@ -32,28 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                children: [
-                  // Logo
-                  Image.asset(
-                    'assets/images/appIcon.png',
-                    height: 100,
-                    fit: BoxFit.contain,
-                  ),
-
-                  const SizedBox(height: 26),
-
-                  // Title
-                  const Text(
-                    'ກະລຸນາປ້ອນຂໍ້ມູນເຂົ້າສູ່ລະບົບ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.teal,
-                    ),
-                  ),
-
-                  const SizedBox(height: 24),
+               
 
                   // Phone Number
                   TextField(
