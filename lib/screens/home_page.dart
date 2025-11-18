@@ -84,6 +84,10 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                     child: Text('ໜ້າຫຼັກ'),
                   ),
                   SizedBox(width: 16),
