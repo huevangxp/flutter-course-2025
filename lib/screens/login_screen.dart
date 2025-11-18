@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         borderRadius: BorderRadius.circular(16),
                         borderSide: BorderSide(color: Colors.red),
                       ),
-                      hintText: 'ເບິໂທ',
+                      hintText: 'ລະຫັດຜ່ານ',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
