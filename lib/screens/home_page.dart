@@ -103,14 +103,14 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             const Icon(
                               Icons.category,
-                              color: Colors.black,
+                              color: Colors.white,
                               size: 20,
                             ),
                             const SizedBox(width: 8),
                             Text(
                               categoryList[index],
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 16,
                               ),
                             ),
