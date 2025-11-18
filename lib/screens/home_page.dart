@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child: const Row(
                       children: [
-                        Icon(Icons.category),
+                        Icon(Icons.category, color: Colors.white),
                         SizedBox(width: 8),
                         Text('ໜ້າຫຼັກ'),
                       ],
