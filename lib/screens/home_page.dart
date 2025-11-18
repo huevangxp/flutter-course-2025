@@ -82,6 +82,7 @@ class _HomePageState extends State<HomePage> {
               ImageSlicde(screenHeight, list),
               const SizedBox(height: 16),
               Category(categoryList),
+              const SizedBox(height: 16),
             ],
           ),
         ),
