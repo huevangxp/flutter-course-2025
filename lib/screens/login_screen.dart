@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      hintText: 'Email',
+                      hintText: 'ເບິໂທ',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
