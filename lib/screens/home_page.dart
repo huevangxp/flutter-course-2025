@@ -75,48 +75,37 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               // add card here
-              Card(
-                elevation: 0, // Add shadow depth
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                clipBehavior: Clip
-                    .antiAlias, // ensures child is clipped to the rounded border
-                child: CarouselSlider(
-                  options: CarouselOptions(
-                    autoPlay: true,
-                    height: screenHeight * 0.20,
-                    viewportFraction: 1, // image fills the entire card
-                    enlargeCenterPage: true,
-                  ),
-                  items: list
-                      .map(
-                        (item) => Container(
-                          width: double.infinity,
-                          child: Image.network(
-                            item.toString(),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      )
-                      .toList(),
-                ),
-              ),
+              ImageSlicde(screenHeight, list),
               SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const LoginScreen()),
-                  );
-                },
-                child: const Text('Login'),
-              ),
             ],
           ),
         ),
       ),
     );
   }
-}
 
+  Card ImageSlicde(double screenHeight, List<String> list) {
+    return Card(
+      elevation: 0, // Add shadow depth
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      clipBehavior:
+          Clip.antiAlias, // ensures child is clipped to the rounded border
+      child: CarouselSlider(
+        options: CarouselOptions(
+          autoPlay: true,
+          height: screenHeight * 0.20,
+          viewportFraction: 1, // image fills the entire card
+          enlargeCenterPage: true,
+        ),
+        items: list
+            .map(
+              (item) => Container(
+                width: double.infinity,
+                child: Image.network(item.toString(), fit: BoxFit.cover),
+              ),
+            )
+            .toList(),
+      ),
+    );
+  }
+}
