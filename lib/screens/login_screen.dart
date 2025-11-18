@@ -17,6 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             Container(
               margin: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               color: Colors.black.withOpacity(0.1),
               // add width and height
               width: double.infinity,
@@ -24,7 +25,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                padding: const EdgeInsets.all(16),
                 children: [
                   Image.asset(
                     'assets/images/appIcon.png',
