@@ -16,6 +16,8 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
+              margin: const EdgeInsets.all(16),
+              color: Colors.red,
               child: Column(
                 children: [
                   Image.asset(
