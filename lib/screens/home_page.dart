@@ -107,8 +107,8 @@ class _HomePageState extends State<HomePage> {
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 8,
+                  horizontal: 10,
+                  vertical: 6,
                 ),
                 decoration: BoxDecoration(
                   color: isSelected ? Colors.teal : Colors.white,
