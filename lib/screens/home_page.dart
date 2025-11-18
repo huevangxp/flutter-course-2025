@@ -101,16 +101,20 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(
+                            Icon(
                               Icons.category,
-                              color: Colors.white,
+                              color: categoryList[index] == 'ເຂົ້າ'
+                                  ? Colors.white
+                                  : Colors.black,
                               size: 20,
                             ),
                             const SizedBox(width: 8),
                             Text(
                               categoryList[index],
-                              style: const TextStyle(
-                                color: Colors.black,
+                              style: TextStyle(
+                                color: categoryList[index] == 'ເຂົ້າ'
+                                    ? Colors.white
+                                    : Colors.black,
                                 fontSize: 16,
                               ),
                             ),
