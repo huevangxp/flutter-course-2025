@@ -80,7 +80,13 @@ class _HomePageState extends State<HomePage> {
               ImageSlicde(screenHeight, list),
               SizedBox(height: 16),
               // add ground category here
-              Row(children: [Text('ໜ້າຫຼັກ'), Spacer(), Text('ໜ້າຫຼັກ')]),
+              Row(
+                children: [
+                  Text('ໜ້າຫຼັກ'),
+                  SizedBox(width: 16),
+                  Text('ໜ້າຫຼັກ'),
+                ],
+              ),
             ],
           ),
         ),
