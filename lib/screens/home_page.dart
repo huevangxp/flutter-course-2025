@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               Category(categoryList),
               const SizedBox(height: 16),
-              Container(height: screenHeight * 0.2, color: Colors.teal),
+              Container(height: double.infinity, color: Colors.teal),
             ],
           ),
         ),
