@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          clipBehavior: Clip.antiAlias,
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
