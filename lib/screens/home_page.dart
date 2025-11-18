@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               ImageSlicde(screenHeight, list),
-              const SizedBox(height: 16),
+              const SizedBox(height: 14),
 
               SizedBox(
                 height: 35,
