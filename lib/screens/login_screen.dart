@@ -21,9 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
               // add width and height
               width: double.infinity,
               height: 600,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-              ),
+
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
