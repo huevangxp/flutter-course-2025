@@ -85,6 +85,7 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [Text('ການອອກຈາກລະບົບ'), Icon(Icons.logout)],
               ),
               const SizedBox(height: 16),
