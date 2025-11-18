@@ -84,7 +84,10 @@ class _HomePageState extends State<HomePage> {
               ListView.builder(
                 itemCount: categoryList.length,
                 itemBuilder: (context, index) {
-                  return Text(categoryList[index]);
+                  return Container(
+                    margin: const EdgeInsets.only(right: 16),
+                    child: Text(categoryList[index]),
+                  );
                 },
               ),
             ],
