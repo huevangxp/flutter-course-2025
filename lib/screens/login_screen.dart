@@ -32,6 +32,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 100,
                   ),
                   const SizedBox(height: 26),
+                  const Text(
+                    'ເຂົ້າລົງ',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 16),
                   //  add text field
                   TextField(
                     decoration: InputDecoration(
