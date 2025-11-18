@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
               // add ground category here
               Row(
                 children: [
-                  Expanded(child: Text('ໜ້າຫຼັກ')),
+                  Container(child: Text('ໜ້າຫຼັກ')),
                   SizedBox(width: 16),
                   Text('ໜ້າຫຼັກ'),
                 ],
