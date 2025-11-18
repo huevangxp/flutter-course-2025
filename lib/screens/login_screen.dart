@@ -18,6 +18,9 @@ class _LoginScreenState extends State<LoginScreen> {
             Container(
               margin: const EdgeInsets.all(16),
               color: Colors.red,
+              // add width and height
+              width: double.infinity,
+              height: double.infinity,
               child: Column(
                 children: [
                   Image.asset(
