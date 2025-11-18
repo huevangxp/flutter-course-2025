@@ -34,7 +34,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 26),
                   const Text(
                     'ກະລຸນາປ້ອນຂໍ້ມູນເຂົ້າສຸ່ລະບົບ',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal,
+                    ),
                   ),
                   const SizedBox(height: 16),
                   //  add text field
