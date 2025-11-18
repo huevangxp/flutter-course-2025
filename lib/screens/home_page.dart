@@ -80,9 +80,8 @@ class _HomePageState extends State<HomePage> {
               ImageSlicde(screenHeight, list),
               const SizedBox(height: 16),
 
-              // Category list - Fixed to use SizedBox instead of Expanded
               SizedBox(
-                height: 35, // Fixed height for the horizontal list
+                height: 35,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryList.length,
