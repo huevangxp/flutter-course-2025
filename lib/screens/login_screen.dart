@@ -1,4 +1,4 @@
-import 'package:course/screens/home_page.dart';
+import 'package:course/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -116,7 +116,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomePage(),
+                                builder: (context) =>
+                                    const BottomNavigationScreen(),
                               ),
                             );
                           },
