@@ -24,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                padding: const EdgeInsets.all(16),
                 children: [
                   Image.asset(
                     'assets/images/appIcon.png',
