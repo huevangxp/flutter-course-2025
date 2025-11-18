@@ -11,78 +11,127 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(16),
-              color: Colors.black.withOpacity(0.1),
-              // add width and height
-              width: double.infinity,
-              height: 500,
+      backgroundColor: const Color(0xFFEDEDED), // soft background
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Container(
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(28),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.08),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
+                  ),
+                ],
+              ),
 
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: [
+                  // Logo
                   Image.asset(
                     'assets/images/appIcon.png',
-                    fit: BoxFit.contain,
                     height: 100,
+                    fit: BoxFit.contain,
                   ),
+
                   const SizedBox(height: 26),
+
+                  // Title
                   const Text(
-                    'ກະລຸນາປ້ອນຂໍ້ມູນເຂົ້າສຸ່ລະບົບ',
+                    'ກະລຸນາປ້ອນຂໍ້ມູນເຂົ້າສູ່ລະບົບ',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.teal,
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  //  add text field
+
+                  const SizedBox(height: 24),
+
+                  // Phone Number
                   TextField(
+                    keyboardType: TextInputType.phone,
                     decoration: InputDecoration(
+                      labelText: 'ເບີໂທ',
+                      filled: true,
+                      fillColor: Colors.grey.shade100,
+                      prefixIcon: const Icon(Icons.phone_android),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
-                        borderSide: BorderSide(color: Colors.red),
                       ),
-                      hintText: 'ເບິໂທ',
-                      hintStyle: TextStyle(color: Colors.grey),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        borderSide: const BorderSide(color: Colors.teal),
+                      ),
                     ),
                   ),
+
                   const SizedBox(height: 16),
+
+                  // Password
                   TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
+                      labelText: 'ລະຫັດຜ່ານ',
+                      filled: true,
+                      fillColor: Colors.grey.shade100,
+                      prefixIcon: const Icon(Icons.lock_outline),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
-                        borderSide: BorderSide(color: Colors.red),
                       ),
-                      hintText: 'ລະຫັດຜ່ານ',
-                      hintStyle: TextStyle(color: Colors.grey),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        borderSide: const BorderSide(color: Colors.teal),
+                      ),
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.teal,
-                      minimumSize: const Size(double.infinity, 50),
+
+                  const SizedBox(height: 24),
+
+                  // Login Button
+                  SizedBox(
+                    width: double.infinity,
+                    height: 55,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.teal,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        elevation: 3,
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'ເຂົ້າສູ່ລະບົບ',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  TextButton(
                     onPressed: () {},
                     child: const Text(
-                      'ເຂົ້າສຸ່ລະບົບ',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      'ລືມລະຫັດຜ່ານ?',
+                      style: TextStyle(color: Colors.teal),
                     ),
                   ),
                 ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
