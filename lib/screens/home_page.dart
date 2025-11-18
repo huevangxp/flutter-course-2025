@@ -84,6 +84,7 @@ class _HomePageState extends State<HomePage> {
               Category(categoryList),
               const SizedBox(height: 16),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(16),
