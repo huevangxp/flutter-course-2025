@@ -93,7 +93,9 @@ class _HomePageState extends State<HomePage> {
                           vertical: 6,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.teal,
+                          color: categoryList[index] == 'ເຂົ້າ'
+                              ? Colors.teal
+                              : Colors.teal.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Row(
