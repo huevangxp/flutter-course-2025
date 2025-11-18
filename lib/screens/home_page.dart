@@ -89,7 +89,11 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: const Row(
-                      children: [Icon(Icons.category), Text('ໜ້າຫຼັກ')],
+                      children: [
+                        Icon(Icons.category),
+                        SizedBox(width: 8),
+                        Text('ໜ້າຫຼັກ'),
+                      ],
                     ),
                   ),
                   SizedBox(width: 16),
