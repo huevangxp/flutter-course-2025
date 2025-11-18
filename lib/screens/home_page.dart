@@ -81,14 +81,16 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
 
               // add ground category here
-              ListView.builder(
-                itemCount: categoryList.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    margin: const EdgeInsets.only(right: 16),
-                    child: Text(categoryList[index]),
-                  );
-                },
+              Expanded(
+                child: ListView.builder(
+                  itemCount: categoryList.length,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: const EdgeInsets.only(right: 16),
+                      child: Text(categoryList[index]),
+                    );
+                  },
+                ),
               ),
             ],
           ),
