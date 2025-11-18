@@ -12,21 +12,17 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(16),
-          color: Colors.red,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'assets/images/appIcon.png',
-                fit: BoxFit.contain,
-                height: 100,
-              ),
-              Text('field input login and button', textAlign: TextAlign.center),
-              Text('forget pass and signup', textAlign: TextAlign.center),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/appIcon.png',
+              fit: BoxFit.contain,
+              height: 100,
+            ),
+            Text('field input login and button', textAlign: TextAlign.center),
+            Text('forget pass and signup', textAlign: TextAlign.center),
+          ],
         ),
       ),
     );
