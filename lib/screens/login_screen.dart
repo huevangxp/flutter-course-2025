@@ -22,6 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
               width: double.infinity,
               height: 600,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
                     'assets/images/appIcon.png',
