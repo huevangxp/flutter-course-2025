@@ -23,24 +23,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // Get screen size
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-
-    // Define responsive widths
-    double textWidth = screenWidth * 0.5;
-    double textFontSize = 18;
-
-    if (screenWidth > 800) {
-      // Tablet/Desktop
-      textWidth = screenWidth * 0.3;
-      textFontSize = 24;
-    } else if (screenWidth > 500) {
-      // Medium devices
-      textWidth = screenWidth * 0.4;
-      textFontSize = 20;
-    }
-
     List<String> list = [
       // image url
       'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
