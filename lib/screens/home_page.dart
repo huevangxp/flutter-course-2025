@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                                   : Colors.black,
                               size: 20,
                             ),
-                            const SizedBox(width: 8),
+                            SizedBox(width: 8),
                             Text(
                               categoryList[index],
                               style: TextStyle(
