@@ -12,6 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String selectedCategory = 'ເຂົ້າ'; // Track selected category
+
   void _onSettingsPressed() {
     Navigator.push(
       context,
@@ -46,7 +48,7 @@ class _HomePageState extends State<HomePage> {
       'https://cdn.pixabay.com/photo/2023/06/01/13/07/annas-hummingbird-8033578_1280.jpg',
     ];
 
-    List<String> categoryList = ['ເຂົ້າ', 'ນ້ຳຄວາມຮັກ', 'ເຫຼືອ', 'ເກີດ'];
+    List<String> categoryList = ['ເຂົ້າ', 'ນ້ຳ', 'ເຫຼືອ', 'ເກີດ'];
 
     return Scaffold(
       appBar: AppBar(
@@ -76,49 +78,59 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
+              // Image slider
               ImageSlicde(screenHeight, list),
-              const SizedBox(height: 14),
+              const SizedBox(height: 16),
 
+              // Category list - Fixed to use SizedBox instead of Expanded
               SizedBox(
-                height: 35,
+                height: 50, // Fixed height for the horizontal list
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryList.length,
                   itemBuilder: (context, index) {
+                    bool isSelected = categoryList[index] == selectedCategory;
                     return Padding(
-                      padding: const EdgeInsets.only(right: 4.0),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10,
-                          vertical: 6,
-                        ),
-                        decoration: BoxDecoration(
-                          color: categoryList[index] == 'ເຂົ້າ'
-                              ? Colors.teal
-                              : Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              Icons.category,
-                              color: categoryList[index] == 'ເຂົ້າ'
-                                  ? Colors.white
-                                  : Colors.black,
-                              size: 20,
-                            ),
-                            SizedBox(width: 8),
-                            Text(
-                              categoryList[index],
-                              style: TextStyle(
-                                color: categoryList[index] == 'ເຂົ້າ'
-                                    ? Colors.white
-                                    : Colors.black,
-                                fontSize: 16,
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            selectedCategory = categoryList[index];
+                          });
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            color: isSelected ? Colors.teal : Colors.white,
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border.all(color: Colors.teal, width: 1),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                Icons.category,
+                                color: isSelected ? Colors.white : Colors.teal,
+                                size: 20,
                               ),
-                            ),
-                          ],
+                              const SizedBox(width: 8),
+                              Text(
+                                categoryList[index],
+                                style: TextStyle(
+                                  color: isSelected
+                                      ? Colors.white
+                                      : Colors.teal,
+                                  fontSize: 16,
+                                  fontWeight: isSelected
+                                      ? FontWeight.w600
+                                      : FontWeight.normal,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     );
