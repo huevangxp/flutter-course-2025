@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Icon(Icons.category, color: Colors.white),
                         SizedBox(width: 8),
-                        Text('ໜ້າຫຼັກ'),
+                        Text('ໜ້າຫຼັກ', style: TextStyle(color: Colors.white)),
                       ],
                     ),
                   ),
