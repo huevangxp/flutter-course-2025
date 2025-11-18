@@ -81,65 +81,65 @@ class _HomePageState extends State<HomePage> {
               // Image slider
               ImageSlicde(screenHeight, list),
               const SizedBox(height: 16),
-
-              // Category list - Fixed to use SizedBox instead of Expanded
-              SizedBox(
-                height: 40, // Fixed height for the horizontal list
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: categoryList.length,
-                  itemBuilder: (context, index) {
-                    bool isSelected = categoryList[index] == selectedCategory;
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            selectedCategory = categoryList[index];
-                          });
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 8,
-                          ),
-                          decoration: BoxDecoration(
-                            color: isSelected ? Colors.teal : Colors.white,
-                            borderRadius: BorderRadius.circular(30),
-                            border: Border.all(color: Colors.teal, width: 1),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                Icons.category,
-                                color: isSelected ? Colors.white : Colors.teal,
-                                size: 20,
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                categoryList[index],
-                                style: TextStyle(
-                                  color: isSelected
-                                      ? Colors.white
-                                      : Colors.teal,
-                                  fontSize: 16,
-                                  fontWeight: isSelected
-                                      ? FontWeight.w600
-                                      : FontWeight.normal,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ),
+              Category(categoryList),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  SizedBox Category(List<String> categoryList) {
+    return SizedBox(
+      height: 40, // Fixed height for the horizontal list
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: categoryList.length,
+        itemBuilder: (context, index) {
+          bool isSelected = categoryList[index] == selectedCategory;
+          return Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  selectedCategory = categoryList[index];
+                });
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
+                decoration: BoxDecoration(
+                  color: isSelected ? Colors.teal : Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(color: Colors.teal, width: 1),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      Icons.category,
+                      color: isSelected ? Colors.white : Colors.teal,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      categoryList[index],
+                      style: TextStyle(
+                        color: isSelected ? Colors.white : Colors.teal,
+                        fontSize: 16,
+                        fontWeight: isSelected
+                            ? FontWeight.w600
+                            : FontWeight.normal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
