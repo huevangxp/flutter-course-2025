@@ -80,26 +80,34 @@ class _HomePageState extends State<HomePage> {
               ImageSlicde(screenHeight, list),
               SizedBox(height: 16),
               // add ground category here
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 6,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.teal,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: const Row(
-                      children: [
-                        Icon(Icons.category, color: Colors.white),
-                        SizedBox(width: 8),
-                        Text('ໜ້າຫຼັກ', style: TextStyle(color: Colors.white)),
-                      ],
-                    ),
-                  ),
-                ],
+              ListView.builder(
+                itemCount: categoryList.length,
+                itemBuilder: (context, index) {
+                  return Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.teal,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: const Row(
+                          children: [
+                            Icon(Icons.category, color: Colors.white),
+                            SizedBox(width: 8),
+                            Text(
+                              'ໜ້າຫຼັກ',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  );
+                },
               ),
             ],
           ),
