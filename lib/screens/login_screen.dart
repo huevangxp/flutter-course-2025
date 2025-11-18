@@ -30,6 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     fit: BoxFit.contain,
                     height: 100,
                   ),
+                  const SizedBox(height: 16),
                   //  add text field
                   TextField(
                     decoration: InputDecoration(
