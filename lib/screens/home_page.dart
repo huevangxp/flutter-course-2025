@@ -76,7 +76,6 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // Image slider
               ImageSlicde(screenHeight, list),
               const SizedBox(height: 16),
 
@@ -87,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                   itemCount: categoryList.length,
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
+                      padding: const EdgeInsets.only(right: 4.0),
                       child: Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 10,
