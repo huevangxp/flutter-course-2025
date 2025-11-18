@@ -82,7 +82,10 @@ class _HomePageState extends State<HomePage> {
               // add ground category here
               Row(
                 children: [
-                  Container(child: Text('ໜ້າຫຼັກ')),
+                  Container(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('ໜ້າຫຼັກ'),
+                  ),
                   SizedBox(width: 16),
                   Text('ໜ້າຫຼັກ'),
                 ],
