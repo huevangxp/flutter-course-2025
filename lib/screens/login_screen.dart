@@ -30,9 +30,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     fit: BoxFit.contain,
                     height: 100,
                   ),
-                  Text(
-                    'field input login and button',
-                    textAlign: TextAlign.center,
+                  //  add text field
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
                   ),
                   Text('forget pass and signup', textAlign: TextAlign.center),
                 ],
