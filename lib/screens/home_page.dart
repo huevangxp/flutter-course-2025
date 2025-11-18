@@ -79,8 +79,11 @@ class _HomePageState extends State<HomePage> {
               // add card here
               ImageSlicde(screenHeight, list),
               SizedBox(height: 16),
-
               // add ground category here
+              Row(children: [
+                  
+                ],
+              ),
             ],
           ),
         ),
