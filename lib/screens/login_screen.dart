@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
               color: Colors.red,
               // add width and height
               width: double.infinity,
-              height: double.infinity,
+              height: double.maxFinite,
               child: Column(
                 children: [
                   Image.asset(
