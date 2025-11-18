@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     onPressed: () {},
                     child: const Text(
-                      'ເຂົ້າລົງ',
+                      'ເຂົ້າສຸ່ລະບົບ',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,
