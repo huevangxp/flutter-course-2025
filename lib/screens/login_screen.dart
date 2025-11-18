@@ -1,3 +1,4 @@
+import 'package:course/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -111,7 +112,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             elevation: 3,
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomePage(),
+                              ),
+                            );
+                          },
                           child: const Text(
                             'ເຂົ້າສູ່ລະບົບ',
                             style: TextStyle(
