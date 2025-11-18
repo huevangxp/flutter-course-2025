@@ -47,6 +47,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text('forget pass and signup', textAlign: TextAlign.center),
                   const SizedBox(height: 16),
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal,
+                      minimumSize: const Size(double.infinity, 50),
+                    ),
                     onPressed: () {},
                     child: const Text('ເຂົ້າລົງ'),
                   ),
