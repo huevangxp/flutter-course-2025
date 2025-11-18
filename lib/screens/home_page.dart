@@ -86,7 +86,10 @@ class _HomePageState extends State<HomePage> {
               Container(
                 height: double.infinity,
                 color: Colors.teal,
-                child: Text('ການຂົ້າເຂົ້າ'),
+                child: Text(
+                  'ການຂົ້າເຂົ້າ',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ],
           ),
