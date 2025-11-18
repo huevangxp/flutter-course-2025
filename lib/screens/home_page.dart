@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                         decoration: BoxDecoration(
                           color: categoryList[index] == 'ເຂົ້າ'
                               ? Colors.teal
-                              : Colors.teal.withOpacity(0.1),
+                              : Colors.white,
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Row(
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             const Icon(
                               Icons.category,
-                              color: Colors.white,
+                              color: Colors.black,
                               size: 20,
                             ),
                             const SizedBox(width: 8),
