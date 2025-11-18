@@ -37,6 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
+                        borderSide: BorderSide(color: Colors.teal),
                       ),
                       hintText: 'ເບິໂທ',
                       hintStyle: TextStyle(color: Colors.grey),
