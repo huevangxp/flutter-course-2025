@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
       'https://cdn.pixabay.com/photo/2023/06/01/13/07/annas-hummingbird-8033578_1280.jpg',
     ];
 
-    List<String> categoryList = ['ເຂົ້າ', 'ນ້ຳ', 'ເຫຼືອ', 'ເກີດ'];
+    List<String> categoryList = ['ເຂົ້າ', 'ນ້ຳຄວາມຮັກ', 'ເຫຼືອ', 'ເກີດ'];
 
     return Scaffold(
       appBar: AppBar(
