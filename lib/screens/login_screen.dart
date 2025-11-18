@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
               color: Colors.black.withOpacity(0.1),
               // add width and height
               width: double.infinity,
-              height: 400,
+              height: 500,
 
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
