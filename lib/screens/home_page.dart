@@ -82,7 +82,6 @@ class _HomePageState extends State<HomePage> {
 
               // add ground category here
               ListView.builder(
-                scrollDirection: Axis.horizontal,
                 itemCount: categoryList.length,
                 itemBuilder: (context, index) {
                   return Text(categoryList[index]);
