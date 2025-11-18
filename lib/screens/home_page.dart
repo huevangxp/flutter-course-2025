@@ -94,6 +94,14 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    color: Colors.teal,
+                    child: Text(
+                      'ການຂົ້າເຂົ້າ',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 16),
