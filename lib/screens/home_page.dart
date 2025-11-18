@@ -76,39 +76,47 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // add card here
+              // Image slider
               ImageSlicde(screenHeight, list),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
 
-              // add ground category here
-              Expanded(
+              // Category list - Fixed to use SizedBox instead of Expanded
+              SizedBox(
+                height: 50, // Fixed height for the horizontal list
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryList.length,
                   itemBuilder: (context, index) {
-                    return Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
-                            vertical: 6,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Colors.teal,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: const Row(
-                            children: [
-                              Icon(Icons.category, color: Colors.white),
-                              SizedBox(width: 8),
-                              Text(
-                                'ໜ້າຫຼັກ',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
                         ),
-                      ],
+                        decoration: BoxDecoration(
+                          color: Colors.teal,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(
+                              Icons.category,
+                              color: Colors.white,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              categoryList[index],
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     );
                   },
                 ),
